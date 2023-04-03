@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-''' Description: Import wait_random from the previous python file that
-                 you’ve written and write an async routine called wait_n
-                 that takes in 2 int arguments: max_delay and n. You will
-                 spawn wait_random n times with the specified max_delay.
-                 wait_n should return the list of all the delays(float values)
-                 The list of the delays should be in ascending order without
-                 using sort() because of concurrency.
-    Arguments: n: int, max_delay: int = 10
+'''Description: Create a measure_time function with integers n and
+                 max_delay as arguments that measures the total execution
+                 time for wait_n(n, max_delay), and returns total_time / n.
+                 Your function should return a float.
+    Arguments: n: int, max_delay: int
 '''
+
 from asyncio import run
 from time import time
 
