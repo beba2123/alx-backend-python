@@ -5,7 +5,6 @@
                  Your function should return a float.
     Arguments: n: int, max_delay: int
 '''
-
 from asyncio import run
 from time import time
 
