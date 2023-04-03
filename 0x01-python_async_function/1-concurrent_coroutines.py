@@ -2,7 +2,6 @@
 '''
 Test file for printing the correct output of the wait_n coroutine
 '''
-
 import asyncio
 from typing import List
 
