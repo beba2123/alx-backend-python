@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """
-3-tasks module
+file: 3-tasks.py
+Desc: This python module contains a python code related to
+      asynchronous coroutine programing in python.
+Author: Anteneh Alem
+Date Created: April 3, 2023
 """
-import asyncio
+from asyncio import Task, create_task
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-def task_wait_random(max_delay: int) -> asyncio.Task:
-    """
-    Takes an integer max_delay, creates a task with wait_random(max_delay) and
-    returns it
-    """
-    return asyncio.create_task(wait_random(max_delay))
+def task_wait_random(max_delay: int) -> Task:
+    """ 3-Tasks """
+    task = create_task(wait_random(max_delay))
+    return task
